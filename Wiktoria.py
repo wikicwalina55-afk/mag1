@@ -4,7 +4,7 @@ import uuid
 # --- Inicjalizacja stanu sesji ---
 # Używamy st.session_state do przechowywania danych, 
 # dzięki czemu lista towarów jest zachowywana pomiędzy interakcjami użytkownika.
-if 'towary' not in st.session_state:
+if 'towary' not in st.session_state: 
     # Struktura listy: [{'id': unique_id, 'nazwa': 'Nazwa Towaru', 'ilosc': 10}]
     st.session_state['towary'] = []
 
